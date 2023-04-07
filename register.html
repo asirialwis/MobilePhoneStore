@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="JS/myScript.js"></script>
+  </head>
+  <body>
+    <img
+      class="logo"
+      src="images/Shpoing_cart.png"
+      alt="ShopCart"
+      width="200px"
+      height="200px"
+    />
+
+    <header>
+      <!-- add a header (c)-->
+
+      <h3>Shopping Cart</h3>
+      <!-- add a sub-header (c) -->
+      <h4>The online shopping store</h4>
+    </header>
+
+    <!-- add a horizontal line (d)-->
+    <hr />
+    <!-- add a horizontal menu (e) -->
+    <ul class="navbar">
+      <li><a href="index.html"> Home</a></li>
+      <li><a href="news.html"> News</a></li>
+      <li><a href="register.html"> Contact</a></li>
+      <li><a href="#ddr"> About</a></li>
+    </ul>
+    <h3>Resgistration Form</h3>
+
+    <form id="reg_form" onsubmit="return checkPassword();">
+      <!-- First name -->
+      First Name<br /><input
+        type="text"
+        id="fname"
+        name="fname"
+        required
+        size="180%"
+      />
+      <!-- Last name -->
+      Last Name <br /><input
+        type="text"
+        id="lname"
+        name="lname"
+        required
+        size="180%"
+      />
+      <br /><br />
+
+      <!-- Gender -->
+      Gender <br /><input type="radio" id="male" name="gender" />Male
+      <input type="radio" id="female" name="gender" />Female <br /><br />
+
+      <!-- Mobile Number -->
+      Mobile Number
+      <br />
+      <input
+        type="text"
+        id="mnumber"
+        name="mnumber"
+        size="180%"
+        maxlength="10"
+        pattern="[0-9{0,9}"
+        required
+      />
+      <br /><br />
+
+      <!-- Email Address -->
+      Email Address
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        size="180%"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+        required
+      />
+      <br /><br />
+
+      <!-- Address -->
+      Address<br />
+      <textarea
+        name="address"
+        id="address"
+        rows="4"
+        cols="50"
+        size="180%"
+        required
+      ></textarea>
+
+      <br /><br />
+
+      <!-- DOB -->
+      choose your DOB<br />
+      <input type="date" />
+      <!-- <select>
+        <option value="Date"></option>
+      </select> -->
+      <br /><br />
+
+      <!-- Password -->
+      <label for="psw">Password</label>
+      <input
+        type="password"
+        id="psw"
+        name="psw"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required
+      />
+
+      <!-- Re-enter password -->
+      <label for="psw">Re-enter Password</label>
+      <input
+        type="password"
+        id="psw2"
+        name="psw2"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required
+      />
+
+      <!-- privcy doc -->
+      <br />
+      <label for="doc">I agree to the terms and conditions</label>
+      <input type="checkbox" id="doc" onclick="enableButton()" />
+      <br />
+      <input type="submit" value="Submit" id="submit" disabled />
+    </form>
+
+    <!-- add a horizontal line (d)-->
+    <hr />
+    <!-- add a footer (g)-->
+    <footer>
+      <p>Created By: Asiri Alwis</p>
+      <a href="http://courseweb.sliit.lk/">Visit Our Course </a>
+    </footer>
+  </body>
+</html>
