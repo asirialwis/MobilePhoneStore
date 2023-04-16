@@ -47,7 +47,7 @@ function priceHigher() {
   document.getElementById("para").innerHTML =
     "<center><strong>List Of Hight Cost Phones</strong> <center>";
 
-  for (i in prices) {
+  for (i in (prices, phone_names)) {
     if (prices[i] > 1000) {
       document.getElementById("para").innerHTML +=
         "<br>" + "<center>" + phone_names[i] + " $" + prices[i] + "</center>";
@@ -67,7 +67,7 @@ function priceLower() {
   document.getElementById("para").innerHTML =
     "<center><strong>List Of Lower Cost Phones</strong> <center>";
 
-  for (i in prices) {
+  for (i in (prices, phone_names)) {
     if (prices[i] < 1000) {
       document.getElementById("para").innerHTML +=
         "<br>" + "<center>" + phone_names[i] + " $" + prices[i] + "</center>";
