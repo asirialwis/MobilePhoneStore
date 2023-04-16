@@ -36,26 +36,41 @@ function priceForLoop() {
 //--------when click price Higher than 1000 button, this function will work---------
 function priceHigher() {
   var prices = [500, 600, 1050, 1200];
+
+  var phone_names = [
+    // Add string array
+    "Iphone XS",
+    "Iphone XS Max",
+    "Iphone 8s plus",
+    "Iphone SE",
+  ];
   document.getElementById("para").innerHTML =
     "<center><strong>List Of Hight Cost Phones</strong> <center>";
 
   for (i in prices) {
     if (prices[i] > 1000) {
       document.getElementById("para").innerHTML +=
-        "<br>" + "<center>" + "Price is " + " $" + prices[i] + "</center>";
+        "<br>" + "<center>" + phone_names[i] + " $" + prices[i] + "</center>";
     }
   }
 }
 //--------when click price Lower than 1000 button, this function will work---------
 function priceLower() {
   var prices = [500, 600, 1050, 1200];
+  var phone_names = [
+    // Add string array
+    "Iphone XS",
+    "Iphone XS Max",
+    "Iphone 8s plus",
+    "Iphone SE",
+  ];
   document.getElementById("para").innerHTML =
     "<center><strong>List Of Lower Cost Phones</strong> <center>";
 
   for (i in prices) {
     if (prices[i] < 1000) {
       document.getElementById("para").innerHTML +=
-        "<br>" + "<center>" + "Price is " + " $" + prices[i] + "</center>";
+        "<br>" + "<center>" + phone_names[i] + " $" + prices[i] + "</center>";
     }
   }
 }
