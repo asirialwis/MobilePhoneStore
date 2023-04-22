@@ -19,6 +19,8 @@ function loadData(name) {
 }
 //--------when click Average price button , this function work--------
 function priceForLoop() {
+  document.getElementById("para").innerHTML = "";
+
   var product = [
     "Iphone XS - $500",
     "Iphone XS Max - $600",
