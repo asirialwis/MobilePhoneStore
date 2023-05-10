@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/2021_iStock_LatestBGTrends_Hero.jpg-37hacs394rfnlye6q17b1otbsizghpa9fhni65z6lb6gploak.jpg");
+  background-size: cover;
 }
 .logo {
   display: block;
